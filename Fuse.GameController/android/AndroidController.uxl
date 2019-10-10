@@ -1,0 +1,5 @@
+<Extensions Backend="CPlusPlus" Condition="ANDROID">
+    <Set Activity.BaseClass="com.fuse.GameControllerActivity" />
+    <CopyFile JavaFile="com/fuse/GameControllerActivity.java" />
+    <ProcessFile SourceFile="com/fuse/GameControllerActivity.cpp" />
+</Extensions>
