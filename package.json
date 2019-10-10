@@ -1,0 +1,36 @@
+{
+  "name": "fuse-gamecontroller",
+  "version": "1.0.0",
+  "description": "GameController package for Fuse Open.",
+  "devDependencies": {
+    "@fuse-open/fuselibs": "https://ci.appveyor.com/api/buildjobs/5a42hivoxrxeu4uf/artifacts/fuse-open-fuselibs-1.12.0.tgz",
+    "@fuse-open/uno": "https://ci.appveyor.com/api/buildjobs/knwrfoctwgi5ttex/artifacts/fuse-open-uno-1.12.3.tgz"
+  },
+  "keywords": [
+    "uno",
+    "fuse",
+    "typescript",
+    "game-controller",
+    "gamepad",
+    "joystick",
+    "android"
+  ],
+  "files": [
+    "build/Fuse.GameController/*",
+    ".unoconfig"
+  ],
+  "scripts": {
+    "build": "uno doctor Fuse.GameController.unoproj",
+    "prepack": "bash -c 'uno doctor Fuse.GameController.unoproj -c Release -n $npm_package_version'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortend/fuse-gamecontroller.git"
+  },
+  "author": "Morten Daniel Fornes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mortend/fuse-gamecontroller/issues"
+  },
+  "homepage": "https://github.com/mortend/fuse-gamecontroller#readme"
+}
