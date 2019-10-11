@@ -25,7 +25,7 @@ public class GameControllerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("app", getGameControllerIds().size() + " game controller(s) are connected.");
+        Log.d("GameControllerActivity", getGameControllerIds().size() + " game controller(s) are connected.");
     }
 
     ArrayList<Integer> getGameControllerIds() {
