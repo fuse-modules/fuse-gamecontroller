@@ -1,4 +1,3 @@
-using Fuse;
 using Fuse.Scripting;
 using Uno.UX;
 
