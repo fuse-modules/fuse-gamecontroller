@@ -1,5 +1,14 @@
 <App Model="Main" Background="#000" ux:AutoCtor="false">
 
+    <!-- Pressed buttons -->
+    <StackPanel Orientation="Horizontal" Alignment="TopCenter" Margin="10" ItemSpacing="5">
+        <Each Items="{pressed}">
+            <Rectangle CornerRadius="6" Color="#8888" Padding="12, 0" Height="24">
+                <Text Value="{data()}" FontSize="14" Color="#EEEE" Alignment="Center"/>
+            </Rectangle>
+        </Each>
+    </StackPanel>
+
     <!-- Thumbsticks -->
     <Grid ColumnCount="2" RowCount="1" Width="100%" Height="100%">
         <Thumbstick Grid.Column="0" Index="Left" />
