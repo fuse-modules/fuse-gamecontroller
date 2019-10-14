@@ -1,4 +1,4 @@
-<App Model="Main" Background="#000">
+<App Model="Main" Background="#000" ux:AutoCtor="false">
 
     <!-- Thumbsticks -->
     <Grid ColumnCount="2" RowCount="1" Width="100%" Height="100%">
