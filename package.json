@@ -21,7 +21,10 @@
   ],
   "scripts": {
     "build": "uno doctor Fuse.GameController.unoproj",
-    "prepack": "bash -c 'uno doctor Fuse.GameController.unoproj -c Release -n $npm_package_version'"
+    "prepack": "bash -c 'uno doctor Fuse.GameController.unoproj -c Release -n $npm_package_version'",
+    "android": "uno build android example --run",
+    "dotnet": "uno build dotnet example --run",
+    "clean": "uno clean example . -v"
   },
   "repository": {
     "type": "git",

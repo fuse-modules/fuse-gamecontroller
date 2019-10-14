@@ -1,0 +1,11 @@
+{
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Fuse.GameController",
+    "Experimental.TextureLoader"
+  ],
+  "Includes": [
+    "*"
+  ]
+}

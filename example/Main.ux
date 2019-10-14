@@ -1,0 +1,9 @@
+<App Model="Main" Background="#000">
+
+    <!-- Thumbsticks -->
+    <Grid ColumnCount="2" RowCount="1" Width="100%" Height="100%">
+        <Thumbstick Grid.Column="0" Index="Left" />
+        <Thumbstick Grid.Column="1" Index="Right" />
+    </Grid>
+
+</App>
