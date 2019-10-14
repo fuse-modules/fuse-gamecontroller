@@ -4,7 +4,7 @@ using Uno.UX;
 namespace Fuse.GameController
 {
     [UXGlobalModule]
-    class GameControllerModule : NativeEventEmitterModule
+    public class GameControllerModule : NativeEventEmitterModule
     {
         static bool _inited;
 
