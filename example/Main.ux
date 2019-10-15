@@ -3,7 +3,7 @@
     <!-- Pressed buttons -->
     <StackPanel Orientation="Horizontal" Alignment="TopCenter" Margin="10" ItemSpacing="5">
         <Each Items="{pressed}">
-            <Rectangle CornerRadius="6" Color="#8888" Padding="12, 0" Height="24">
+            <Rectangle CornerRadius="6" Color="#444" Padding="12, 0" Height="24">
                 <Text Value="{data()}" FontSize="14" Color="#EEEE" Alignment="Center"/>
             </Rectangle>
         </Each>
@@ -14,5 +14,10 @@
         <Thumbstick Grid.Column="0" Index="Left" />
         <Thumbstick Grid.Column="1" Index="Right" />
     </Grid>
+
+    <!-- Background effect -->
+    <Rectangle>
+        <BackgroundEffect />
+    </Rectangle>
 
 </App>
