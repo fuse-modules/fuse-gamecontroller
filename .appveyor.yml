@@ -1,0 +1,27 @@
+version: '{build}'
+image: Visual Studio 2017
+
+environment:
+  # Get stack traces from Uno
+  LOG_TRACE: 1
+  # Add uno command to PATH
+  PATH: node_modules/.bin;%PATH%
+  # Disable Gradle Daemon (Android builder)
+  GRADLE_OPTS: -Dorg.gradle.daemon=false
+
+install:
+  # Install Fuse SDK
+  - npm install android-build-tools -g
+  - npm install
+
+build_script:
+  # Build NPM package
+  - npm pack
+
+artifacts:
+  - path: '*.tgz'
+
+test_script:
+  # Build example app for Android and .NET
+  - uno build android example
+  - uno build dotnet example
