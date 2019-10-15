@@ -17,6 +17,7 @@
   ],
   "files": [
     "build/Fuse.GameController/*",
+    "index.d.ts",
     ".unoconfig"
   ],
   "scripts": {
