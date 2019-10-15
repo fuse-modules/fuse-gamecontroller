@@ -4,7 +4,8 @@
   "description": "GameController package for Fuse Open.",
   "devDependencies": {
     "@fuse-open/fuselibs": "https://ci.appveyor.com/api/buildjobs/5a42hivoxrxeu4uf/artifacts/fuse-open-fuselibs-1.12.0.tgz",
-    "@fuse-open/uno": "https://ci.appveyor.com/api/buildjobs/knwrfoctwgi5ttex/artifacts/fuse-open-uno-1.12.3.tgz"
+    "@fuse-open/uno": "https://ci.appveyor.com/api/buildjobs/knwrfoctwgi5ttex/artifacts/fuse-open-uno-1.12.3.tgz",
+    "typescript": "^3.6.4"
   },
   "keywords": [
     "uno",
@@ -21,6 +22,7 @@
     ".unoconfig"
   ],
   "scripts": {
+    "tsc": "tsc index.d.ts",
     "build": "uno doctor Fuse.GameController.unoproj",
     "prepack": "bash -c 'uno doctor Fuse.GameController.unoproj -c Release -n $npm_package_version'",
     "android": "uno build android example --run",
